@@ -39,3 +39,16 @@ Elsa 엔진을 독립적인 서비스로 구동하기 위한 표준 구성입니
 ---
 
 *이 문서는 Elsa를 사용하여 실제 비즈니스 애플리케이션을 구축할 때의 표준 설계 패턴을 분석한 결과입니다.*
+
+## 🏆 핵심 코드 상세 리뷰 (Top 10)
+
+1.  **`src/Elsa.Server/Program.cs`**: Elsa 서버의 메인 진입점으로, 호스트 설정 및 서비스 등록의 핵심입니다.
+2.  **`src/Elsa.Studio.BlazorServer/Program.cs`**: Blazor Server 방식의 Elsa Studio 구동 설정을 담당합니다.
+3.  **`src/Elsa.Studio.BlazorWasm/Program.cs`**: Blazor WebAssembly 방식의 클라이언트측 Studio 구동 설정입니다.
+4.  **`src/Elsa.Server.Shared/DatabaseConfiguration.cs`**: 다양한 데이터베이스 제공자(EF Core, Dapper 등)에 대한 공통 설정 로직을 포함합니다.
+5.  **`src/Elsa.Server.Studio.BlazorServer/Program.cs`**: 서버와 스튜디오가 하나의 프로세스에서 실행되는 통합 호스트 설정입니다.
+6.  **`src/Elsa.Server.Studio.BlazorWasm/Program.cs`**: 서버와 WASM 기반 스튜디오가 결합된 통합 호스트 설정입니다.
+7.  **`Directory.Build.props`**: 프로젝트 전체에 적용되는 공통 빌드 속성과 메타데이터를 정의합니다.
+8.  **`Directory.Packages.props`**: 중앙 집중식 패키지 버전 관리를 통해 의존성 일관성을 유지합니다.
+9.  **`ElsaApps.sln`**: 전체 앱 프로젝트들을 관리하는 메인 솔루션 파일입니다.
+10. **`README.md`**: 프로젝트의 목적, 실행 방법 및 아키텍처 개요를 설명하는 최상위 문서입니다.

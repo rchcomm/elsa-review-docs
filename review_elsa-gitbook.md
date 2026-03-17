@@ -37,3 +37,16 @@
 ---
 
 *이 문서는 Elsa 프로젝트의 지식 베이스가 어떻게 구성되어 사용자 경험을 지원하는지를 분석한 결과입니다.*
+
+## 🏆 핵심 코드 상세 리뷰 (Top 10)
+
+1.  **`SUMMARY.md`**: 전체 문서의 계층 구조와 내비게이션 메뉴를 결정하는 핵심 목차 파일입니다.
+2.  **`README.md`**: Elsa 문서의 공식 시작점이며 전체적인 학습 로드맵을 제시합니다.
+3.  **`getting-started/architecture-overview.md`**: Elsa의 내부 작동 원리와 전체 아키텍처를 이해하기 위한 필수 문서입니다.
+4.  **`getting-started/hello-world.md`**: 초보자가 첫 워크플로를 작성하는 과정을 안내하는 핵심 튜토리얼입니다.
+5.  **`guides/persistence/README.md`**: 데이터베이스 영속성 설정 및 최적화 전략을 다루는 중요 가이드입니다.
+6.  **`guides/security/README.md`**: 인증, 권한 부여 및 시스템 보안 설정을 설명하는 핵심 보안 지침입니다.
+7.  **`extensibility/custom-activities.md`**: 개발자가 독자적인 활동(Activity)을 만드는 방법을 단계별로 안내합니다.
+8.  **`expressions/javascript.md`**: 워크플로 내에서 동적 로직을 처리하는 JavaScript 표현식 활용법을 다룹니다.
+9.  **`studio/workflow-editor/README.md`**: 시각적 디자이너의 UI 구성 요소와 조작법을 상세히 설명합니다.
+10. **`operate/workflow-activation-strategies.md`**: 워크플로가 어떻게 트리거되고 인스턴스화되는지 원리를 설명합니다.

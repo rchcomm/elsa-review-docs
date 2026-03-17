@@ -39,3 +39,16 @@ Elsa Copilot은 단순한 생성을 넘어, 기존 워크플로의 오류 진단
 ---
 
 *이 문서는 Elsa 생태계에서 AI가 어떻게 워크플로 생산성을 극대화하는지를 분석한 결과입니다.*
+
+## 🏆 핵심 코드 상세 리뷰 (Top 10)
+
+1.  **`src/Elsa.Copilot.Workbench/Program.cs`**: 코파일럿 전용 워크벤치 애플리케이션의 시작점입니다.
+2.  **`src/Modules/Core/Elsa.Copilot.Modules.Core.Chat/Services/CopilotChatService.cs`**: AI 모델과 통신하여 워크플로 관련 답변을 생성하는 핵심 서비스입니다.
+3.  **`src/Modules/Core/Elsa.Copilot.Modules.Core.Chat/Controllers/CopilotChatController.cs`**: 채팅 인터페이스를 위한 API 엔드포인트를 제공합니다.
+4.  **`src/Modules/Studio/Elsa.Copilot.Modules.Studio.Chat/Services/StudioChatClient.cs`**: Elsa Studio 내에서 코파일럿 기능을 통합하기 위한 클라이언트 구현체입니다.
+5.  **`src/Modules/Core/Elsa.Copilot.Modules.Core.Chat/Tools/GetWorkflowDefinitionTool.cs`**: AI가 현재 워크플로 정의를 이해할 수 있도록 돕는 도구(Tool)입니다.
+6.  **`src/Modules/Core/Elsa.Copilot.Modules.Core.Chat/Tools/GetWorkflowInstanceStateTool.cs`**: 실행 중인 워크플로 인스턴스의 상태를 AI가 조회할 수 있게 하는 도구입니다.
+7.  **`src/Elsa.Copilot.Workbench/Setup/ElsaServerSetup.cs`**: 코파일럿 환경에 최적화된 Elsa 서버 구성 설정입니다.
+8.  **`src/Elsa.Copilot.Workbench/Setup/ElsaStudioSetup.cs`**: 코파일럿 기능을 포함한 Elsa Studio 구성 설정입니다.
+9.  **`CHAT-MODULE-IMPLEMENTATION.md`**: 채팅 모듈의 설계 원칙과 구현 세부 사항을 다루는 기술 문서입니다.
+10. **`functional-requirements.md`**: 코파일럿이 해결하고자 하는 기능적 요구 사항과 비즈니스 목표를 정의합니다.
